@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js" ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span id="title">Tic <span style="color:lightsalmon">Tac</span> Toe</span>
+      <div class="scoreboard">
+        <div class="col">user:</div>
+        <div class="col score">0 - 0</div>
+        <div class="col">:ai</div>
+      </div>
+      <div class="grid">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <span id="message">Hit "Start Game" to begin</span>
+      <div class="row">
+        <div class="labels right">
+          <span>Starter:</span>
+          <br />
+          <span>User Icon:</span>
+          <br />
+          <span>Difficulty:</span>
+        </div>
+        <div class="buttons">
+          <div class="col">
+            <input type="radio" name="turn" value="user" checked>User</input><br />
+            <input type="radio" name="icon" value="X" checked>X</input><br />
+            <input type="radio" name="difficulty" value="easy" checked>Easy</input>
+          </div>
+          <div class="col">
+            <input type="radio" name="turn" value="ai">AI</input><br />
+            <input type="radio" name="icon" value="O">O</input><br />
+            <input type="radio" name="difficulty" value="medium">Medium</input>
+          </div>
+          <div class="col">
+            <br />
+            <br />
+            <input type="radio" name="difficulty" value="hard">Hard</input>
+          </div>
+        </div>
+      </div>
+      <button id="newGame">Start Game</button>
+    </div>
+  </body>
+</html>
+
+
